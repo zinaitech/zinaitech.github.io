@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZinAI | Trusted AI, ZinAI</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+       .hero {
+            /* 기존 배경 이미지 코드를 아래처럼 변경합니다. */
+            background: url('./assets/index.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .about-us, .services, .portfolio, .contact {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        .services-grid, .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item, .portfolio-item {
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover, .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item h3, .portfolio-item h3 {
+            color: #3498db;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+		.contact-form button, .contact-form a.contact-button {
+			background-color: #3498db;
+			color: white;
+			padding: 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: background-color 0.3s;
+			text-decoration: none; /* <a> 태그의 기본 밑줄 제거 */
+			display: block; /* 블록 요소로 만들어 너비를 100%로 확장 */
+			text-align: center; /* 텍스트를 중앙에 정렬 */
+		}
+
+		.contact-form button:hover, .contact-form a.contact-button:hover {
+			background-color: #2980b9;
+		}
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#"><img height="30" alt="" src="./assets/logo_zinai.png"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">회사 소개</a></li>
+                    <li><a href="programs.html">교육</a></li>
+                    <li><a href="#contact">상담 · 문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Trusted AI, ZinAI</h1>
+        <p>Pursuing Technological Excellence,Driven by Customers</p>
+    </section>
+
+    <section id="about" class="about-us container">
+        <h2>회사 소개</h2>
+        <p style="text-align: center; font-size: 20px; color: #3498db;"><b>ZinAI: 고객이 신뢰하는 찐 AI 파트너</b></br></p><p style="text-align: center;">저희 ZinAI는 고객이 믿고 맡길 수 있는 AI 기술을 제공합니다.</br> AI 기술을 활용한 교육과 엔지니어링 양축에서 통합 솔루션을 제공하며, </br>고객의 비즈니스 성장을 위한 최적의 파트너가 되겠습니다.</p>
+    </section>
+
+    <section id="services" class="services container">
+        <h2>주요 활동</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>온디바이스 AI 최적화</h3>
+                <p>기술적 우수성을 추구하며, 고객 맞춤형 온디바이스 AI 솔루션을 개발합니다.</p>
+            </div>
+            <div class="service-item">
+                <h3>컨설팅</h3>
+                <p>고객을 중심으로 생각하며, 최적의 IT 전략과 통합 시스템으로 기업의 성장을 돕습니다.</p>
+            </div>
+            <div class="service-item">
+                <h3>교육</h3>
+                <p>기술 전문성을 바탕으로 고객이 스스로 혁신을 이끌어갈 수 있도록 지원합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+        <h2>교육 프로그램</h2>
+        <div class="portfolio-grid">
+             <div class="portfolio-item">
+               <a href="programs.html"><img src="./assets/program_1.png" alt="AI 부트캠프" height="200"></a>
+                <h3>AI 부트캠프</h3>
+                <p>온디바이스 AI를 위한 Deep 소프트웨어 스택 최적화 교육</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="./assets/program_2.png" alt="전문가 양성" height="200">
+                <h3>AI 기반 데이터 분석 전문가 양성</h3>
+                <p>기업의 데이터를 분석하고 활용하는 AI 솔루션을 구축하여, 실질적인 매출 증대 및 비즈니스 성과를 창출할 수 있는 전문가를 양성합니다.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="./assets/program_3.png" alt="IT 컨설팅"  height="200">
+                <h3>시스템 효율성 향상을 위한 IT 컨설팅</h3>
+                <p>기업의 기존 시스템을 진단하고, AI 기술을 활용한 최적화 방안을 제시하여 전반적인 업무 효율성을 획기적으로 개선합니다.</p>
+            </div>
+        </div>
+    </section>
+
+	<section id="contact" class="contact container">
+		<h2>문의하기</h2>
+		<p style="text-align: center;">더 궁금한 점이 있으시면 언제든지 저희에게 연락 주세요.</p>
+		<div class="contact-form">
+			<input type="text" placeholder="이름" required>
+			<input type="email" placeholder="이메일" required>
+			<input type="tel" placeholder="전화번호">
+			<textarea rows="5" placeholder="문의 내용" required></textarea>
+			<a href="mailto:hongwoosystems@gmail.com?subject=[문의] ZinAI에 문의하기" class="contact-button">문의하기</a>
+		</div>
+	</section>
+
+    <footer>
+        <div class="container">
+            <p>ZinAI | 대표: 김인정 | 사업자등록번호: 722-87-00187</p>
+            <p>주소: 서울특별시 강남구 | 전화: 02-880-8370 | 이메일: abc@abc.com</p>
+            <p>Copyright &copy; 2015 ZinAI. All Rights Reserved.</p>
+            <p>
+                <a href="#">개인정보처리방침</a> | 
+                <a href="#">이용약관</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
