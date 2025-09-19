@@ -5,7 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZinAI | 교육프로그램 </title>
     <style>
-        /* 기본 스타일 */
+		/* programs.html: CSS 추가 (기존 스타일 아래에 추가) */
+		@media (max-width: 768px) {
+			.hero h1 {
+				font-size: 32px; /* 모바일에서 h1 글꼴 크기 줄이기 */
+			}
+			.hero p {
+				font-size: 18px; /* 모바일에서 p 글꼴 크기 줄이기 */
+			}
+		}
+
+		@media (max-width: 480px) {
+			.hero h1 {
+				font-size: 24px; /* 더 작은 모바일 화면을 위해 추가 조정 */
+			}
+			.hero p {
+				font-size: 16px;
+			}
+		}
+		
+		/* 기본 스타일 */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -390,10 +409,11 @@
         </div>
     </header>
 
-    <section class="hero">
-        <h1>AI 부트캠프: </br>온디바이스 AI를 위한 Deep 소프트웨어 스택 최적화</h1>
-        <p>2025.10.28(화)~10.29(수) · 서울대학교 관악 캠퍼스</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-vczp060bH-IoXLrM4xvsSfyX5AdvzWUHUU6ssHxptecPBQ/viewform?usp=header" class="apply-button" target="_blank">신청하기</a> </section>
+	<section class="hero">
+		<h1>AI 부트캠프: 온디바이스 AI를 위한 Deep 소프트웨어 스택 최적화</h1>
+		<p>2025.10.28(화)~10.29(수) · 서울대학교 관악 캠퍼스</p>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSf-vczp060bH-IoXLrM4xvsSfyX5AdvzWUHUU6ssHxptecPBQ/viewform?usp=header" class="apply-button" target="_blank">신청하기</a>
+	</section>
 
     <main class="container section">
         <section class="card">
